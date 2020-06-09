@@ -2,10 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <a href="/app">Link to App</a>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Twitter Analysis Flask-Dash Application.">
+    <title>Twitter Analysis Flask-Dash Application.</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/pure/grids-responsive-min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/pure/pure-min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/pure/styles.css') }}">
 </head>
 <body>
+
+<div class="splash-container">
+    <div class="splash">
+        <h1 class="splash-head">Welcome!</h1>
+        <p class="splash-subhead">
+            Twitter Analysis Flask-Dash Application.
+        </p>
+        <p>
+            <a href="/app" class="pure-button pure-button-primary">Link to App</a>
+        </p>
+    </div>
+</div>
+
+{#<div class="bgimg">#}
+{#  <div class="topleft">#}
+{#    <p>Logo</p>#}
+{#  </div>#}
+{#  <div class="middle">#}
+{#    <h1>Twitter Analysis Flask-Dash Application</h1>#}
+{#    <hr>#}
+{#    <a href="/app" class="pure-button pure-button-primary">Link to App</a>#}
+{#  </div>#}
+{#</div>#}
 
 </body>
 </html>

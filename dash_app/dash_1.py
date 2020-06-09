@@ -4,7 +4,7 @@ import dash_html_components as html
 from dash.dependencies import Input, Output
 import dash_bootstrap_components as dbc
 import dash_table
-from .assets import header
+from .assets import header, footer
 
 from dash.dependencies import Input, Output
 from data_analysis import *
@@ -55,7 +55,9 @@ def create_dashboard(server):
             ),
             dcc.Graph(id='live-rank-user-graph'),
             html.Div(id="live-rank-user-table")
-        ], style={'width': '48%', 'display': 'inline-block', 'padding':'20px'})
+        ], style={'width': '48%', 'display': 'inline-block', 'padding':'20px'}),
+
+        footer.get_footer(),
     ])
 
     # Initialize callbacks after our app is loaded
